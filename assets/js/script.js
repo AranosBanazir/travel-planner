@@ -187,4 +187,17 @@ function handleSubmit(e){
     markercount = 1
 }
 
-document.querySelector('form').addEventListener('submit', handleSubmit)
+function handleLinkClick(e){
+    const search = document.getElementById('search')
+    const map = document.getElementById('map')
+    const ol = document.getElementById('places')
+    e.preventDefault()
+    getGeoId(e.target.innerText)
+    ol.innerHTML = ''
+    map.innerHTML = ''
+    markercount = 1
+    // console.log(e.target.innerText)
+}
+
+    $('form').on('submit', handleSubmit)
+    $('#map li').on('click', handleLinkClick)

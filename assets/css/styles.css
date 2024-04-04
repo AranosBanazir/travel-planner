@@ -23,12 +23,23 @@ main{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin: 50px;
 }
 
 #map {
     height: 400px; /* The height is 400 pixels */
     width: 75%; /* The width is the width of the web page */
-    margin: 50px 20px;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+#map h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#map li:hover{
+    cursor: pointer;
 }
 
 #checkbox-bar{
@@ -46,7 +57,7 @@ main{
 #checkbox-bar h2{
     font-size: 20px;
     font-weight: bold;
-    margin-left: 75px;
+    margin-left: 30px;
 }
 
 #checkbox-container{
@@ -79,4 +90,8 @@ main{
     border-radius: 10px;
     font-size: 16px;
 
+}
+
+li{
+    margin-left: 10px;
 }
