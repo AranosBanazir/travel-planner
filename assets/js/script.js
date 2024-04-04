@@ -1,7 +1,8 @@
 const key = 'a9d59121cb4743ac9edb7c6853265cb9'
 
+const options = $('input:checked')
 
-
+console.log(options.dataset)
 //function to get geoid: use https://api.geoapify.com/v1/geocode
     function getGeoId(place){
         fetch(`https://api.geoapify.com/v1/geocode/search?text=${place}&apiKey=${key}`)
@@ -22,7 +23,9 @@ const key = 'a9d59121cb4743ac9edb7c6853265cb9'
 
 function getLocalInformation(id){
 
-fetch(`https://api.geoapify.com/v2/places?categories=airport,healthcare&filter=place:${id}&apiKey=${key}`)
+     
+
+fetch(`https://api.geoapify.com/v2/places?categories=${categories}&filter=place:${id}&apiKey=${key}`)
 .then(function(response){
     return response.json()
 })

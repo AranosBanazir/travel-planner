@@ -4,6 +4,10 @@
     color: white;
 }
 
+.bg-based{
+    background-color: gold;
+}
+
 main{
     display: flex;
     flex-direction: row;
@@ -13,3 +17,41 @@ main{
     height: 400px; /* The height is 400 pixels */
     width: 50%; /* The width is the width of the web page */
 }
+
+#checkbox-bar{
+    display: flex;
+    background-color: dimgrey;
+    justify-content: space-between;
+    color: white;
+
+}
+
+.label-text{
+    color: white;
+}
+
+#checkbox-bar h2{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 75px;
+}
+
+#checkbox-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    align-self: flex-end;
+}
+
+#checkbox-bar span{
+    margin-right: 5px;
+}
+
+/* font-size: 16px;
+font-weight: bold;
+justify-content: space-evenly;
+background-color: brown; */
