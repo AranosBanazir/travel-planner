@@ -1,7 +1,7 @@
 const key = 'a9d59121cb4743ac9edb7c6853265cb9'
 
 
-function getCheckedItems(){
+function getCategories(){
     const options = $('input:checked')
     const categories = []
     for (let i = 0; i< options.length; i++){
@@ -32,9 +32,9 @@ function getCheckedItems(){
 
 function getLocalInformation(id){
 
-     const categories = getCheckedItems()
-
-fetch(`https://api.geoapify.com/v2/places?categories=${categories}&filter=place:${id}&limit=50&apiKey=${key}`)
+    
+    //fetch information from Geoapify
+fetch(`https://api.geoapify.com/v2/places?categories=${getCategories()}&filter=place:${id}&limit=50&apiKey=${key}`)
 .then(function(response){
     return response.json()
 })
